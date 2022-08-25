@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/1658083887039.jpeg" type="image/x-icon">
+    <title>Alarm System</title>
+</head>
+<body>
+    <center>
+        <header>Time to wake up</header>
+        <br>
+        <div id="clock"></div>
+        <br><br><br><br>
+        <div>
+            <input type="text" name="" placeholder="Hrs" id="hours">
+            <input type="text" name="" placeholder="Min" id="minutes">
+        </div>
+        <br>
+        <div class="button-div">
+            <button onclick="setAlarm()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/>
+                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
+              </svg></button>
+            <button onclick="reload()">💤</button>
+            <button onclick="hey()">OFF ≫≫≫</button>
+        </div>
+    </center>
+
+    <style>
+        body{
+            background-color: #242424;
+        }
+        header{
+            color: #747474;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        center{
+            border: 2px solid #747474;
+            max-width: 400px;
+            margin: auto;
+            padding: 180px 0px 30px 0px;
+            box-shadow: 2px 2px 20px 2px black;
+        }
+        #clock{
+            color: #747474;
+            width: fit-content;
+            font-size: 3em;
+            font-weight: 900;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        input{
+            text-align: center;
+            outline: none;
+            font-size: 1.1em;
+            font-weight: 900;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 70px;
+            padding: 5px;
+            border-radius: 20px;
+            background-color: #242424;
+            border: 2px solid #747474;
+            color: #747474;
+        }
+        input::placeholder{
+            font-weight: 100;   
+        }
+        .button-div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 250px;
+            row-gap: 20px;
+        }
+        button{
+            padding: 10px;
+            font-weight: 900;
+            font-size: 1.1em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 20px;
+            background-color: #242424;
+            color: #747474;
+            border: 2px solid #747474;
+            box-shadow: 5px 5px 10px 0px black;
+        }
+        button:nth-of-type(3){
+            grid-column: 1/6;
+        }
+        @media all and (max-width : 425px){
+            center{
+            padding: 160px 0px 30px 0px;
+            }
+            #clock{
+                font-size: 2em;
+            }
+        }
+        @media all and (min-width: 426px) and (max-width : 768px){
+            center{
+            margin-top: 100px;
+            padding: 300px 0px 50px 0px;
+        }
+        #clock{
+                font-size: 3em;
+            }
+        }
+    </style>
+
+    <script src="/alarm.js"></script>
+</body>
+</html>
