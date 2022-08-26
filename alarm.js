@@ -31,9 +31,18 @@ const setAlarm = ()=>{
     }
     setInterval("setAlarm()", 1000);
 }
-const snooze = ()=>{
+
+// const snooze = ()=>{
+//     let alarmHrs = hours.value;
+//     let alarmMin = minutes.value;
+//     snoozeTime = new Date();
     
-}
+//     if(alarmHrs != snoozeTime.getHours() || alarmMin != snooze.getMinutes()){
+//         clearInterval("snooze()", 5000);
+//         // song.play()
+//         // location.reload()
+//     }
+// }
 
 const hey = ()=>{
     alert('Answer this Question')
