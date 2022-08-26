@@ -31,6 +31,9 @@ const setAlarm = ()=>{
     }
     setInterval("setAlarm()", 1000);
 }
+const snooze = ()=>{
+    
+}
 
 const hey = ()=>{
     alert('Answer this Question')
