@@ -1,4 +1,4 @@
-const song = new Audio('crazy-chicken.mp3');
+const song = new Audio('mixkit-morning-clock-alarm-1003.wav');
 
 const timeDisp = ()=>{
     const time = new Date();
